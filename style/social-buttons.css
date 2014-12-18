@@ -1,0 +1,245 @@
+/*
+
+CSS Social Icons
+By: Nick La (@nickla)
+http://webdesignerwall.com/tutorials/css-social-buttons
+
+Version: 1.0
+
+*/
+
+/************************************************************************************
+SOCIAL LINK a.sb
+*************************************************************************************/
+a.sb,
+.sb a {
+	width: 32px;
+	height: 32px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	text-indent: -900em;
+	color: #333;
+	text-decoration: none;
+	line-height: 100%;
+	white-space: nowrap;
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 2px 5px 0;
+	
+	/* default button color */
+	background-color: #ececec;
+	border: solid 1px #b8b8b9;
+	
+	/* default box shadow */
+	-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.1);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 0 rgba(0,0,0,.1);
+
+	/* default border radius */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	
+}
+/* for IE */
+*:first-child+html a.sb,
+*:first-child+html .sb a {
+	text-indent: 0;
+	line-height: 0;
+	font-size: 0;
+	overflow: hidden;
+}
+
+
+/* SB LIST
+================================================ */
+.sb {
+	margin: 0;
+	padding: 0;
+}
+.sb li {
+	margin: 0;
+	padding: 0;
+	display: inline;
+}
+
+
+
+
+/* COLORS
+================================================ */
+
+/* default hover */
+a.sb:hover:after,
+.sb a:hover:after {
+	background-image: none;
+}
+a.sb:hover,
+.sb a:hover,
+a.sb:hover:after,
+.sb a:hover:after {
+	background-color: #f3f3f3;
+}
+
+
+/* blue color */
+a.sb.blue,
+.sb.blue a,
+a.sb.blue:after,
+.sb.blue a:after {
+	background-color: #4d7de1;
+	border-color: #294c89;
+	color: #fff;
+}
+a.sb.blue:hover:after,
+.sb.blue a:hover:after {
+	background-image: none;
+}
+a.sb.blue:hover,
+.sb.blue a:hover,
+a.sb.blue:hover:after,
+.sb.blue a:hover:after {
+	background-color: #5384ed;
+}
+
+
+/* light-blue color */
+a.sb.light-blue,
+.sb.light-blue a,
+a.sb.light-blue:after,
+.sb.light-blue a:after {
+	background-color: #bdd9fd;
+	border-color: #6694d6;
+}
+a.sb.light-blue:hover:after,
+.sb.light-blue a:hover:after {
+	background-image: none;
+}
+a.sb.light-blue:hover,
+.sb.light-blue a:hover,
+a.sb.light-blue:hover:after,
+.sb.light-blue a:hover:after {
+	background-color: #d1e5fe;
+}
+
+
+/* STYLES
+================================================ */
+
+/* min style */
+a.sb.min,
+.sb.min a {
+	background-color: transparent;
+	border: none;
+	
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* circle style */
+a.sb.circle,
+.sb.circle a,
+a.sb.circle:before,
+.sb.circle a:before,
+a.sb.circle:after,
+.sb.circle a:after {
+	-webkit-border-radius: 10em;
+	-moz-border-radius: 10em;
+	border-radius: 10em;
+}
+
+
+/* no-border style */
+a.sb.no-border,
+.sb.no-border a {
+	border: none;
+}
+
+/* no-shadow style */
+a.sb.no-shadow,
+.sb.no-shadow a {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+
+/* ICONS
+================================================ */
+a.sb.twitter,
+.sb a.twitter {
+	background-image: url(../images/twitter_bird.png);
+}
+
+a.sb.facebook,
+.sb a.facebook {
+	background-image: url(../images/facebook.png);
+}
+
+a.sb.linkedin,
+.sb a.linkedin {
+	background-image: url(../images/linkedin.png);
+}
+
+
+/* white icons */
+a.sb.blue.twitter,
+.sb.blue a.twitter,
+a.sb.purple.twitter,
+.sb.purple a.twitter,
+a.sb.red.twitter,
+.sb.red a.twitter,
+a.sb.green.twitter,
+.sb.green a.twitter,
+a.sb.orange.twitter,
+.sb.orange a.twitter,
+a.sb.brown.twitter,
+.sb.brown a.twitter,
+a.sb.black.twitter,
+.sb.black a.twitter,
+a.sb.gray.twitter,
+.sb.gray a.twitter {
+	background-image: url(../images/white_twitter_bird.png);
+}
+
+a.sb.blue.facebook,
+.sb.blue a.facebook,
+a.sb.purple.facebook,
+.sb.purple a.facebook,
+a.sb.red.facebook,
+.sb.red a.facebook,
+a.sb.green.facebook,
+.sb.green a.facebook,
+a.sb.orange.facebook,
+.sb.orange a.facebook,
+a.sb.brown.facebook,
+.sb.brown a.facebook,
+a.sb.black.facebook,
+.sb.black a.facebook,
+a.sb.gray.facebook,
+.sb.gray a.facebook {
+	background-image: url(../images/white_facebook.png);
+}
+
+
+
+a.sb.blue.linkedin,
+.sb.blue a.linkedin,
+a.sb.purple.linkedin,
+.sb.purple a.linkedin,
+a.sb.red.linkedin,
+.sb.red a.linkedin,
+a.sb.green.linkedin,
+.sb.green a.linkedin,
+a.sb.orange.linkedin,
+.sb.orange a.linkedin,
+a.sb.brown.linkedin,
+.sb.brown a.linkedin,
+a.sb.black.linkedin,
+.sb.black a.linkedin,
+a.sb.gray.linkedin,
+.sb.gray a.linkedin {
+	background-image: url(../images/white_linkedin.png);
+}
