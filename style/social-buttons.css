@@ -178,11 +178,16 @@ a.sb.facebook,
 	background-image: url(../images/facebook.png);
 }
 
+
 a.sb.linkedin,
 .sb a.linkedin {
 	background-image: url(../images/linkedin.png);
 }
 
+a.sb.gplus,
+.sb a.gplus {
+	background-image: url(../images/gplus.png);
+}
 
 /* white icons */
 a.sb.blue.twitter,
@@ -242,4 +247,23 @@ a.sb.black.linkedin,
 a.sb.gray.linkedin,
 .sb.gray a.linkedin {
 	background-image: url(../images/white_linkedin.png);
+}
+
+a.sb.blue.gplus,
+.sb.blue a.gplus,
+a.sb.purple.gplus,
+.sb.purple a.gplus,
+a.sb.red.gplus,
+.sb.red a.gplus,
+a.sb.green.gplus,
+.sb.green a.gplus,
+a.sb.orange.gplus,
+.sb.orange a.gplus,
+a.sb.brown.gplus,
+.sb.brown a.gplus,
+a.sb.black.gplus,
+.sb.black a.gplus,
+a.sb.gray.gplus,
+.sb.gray a.gplus {
+	background-image: url(../images/gplus.png);
 }
