@@ -13,8 +13,9 @@ $(document).ready(function () {
     //Zero the idle timer on mouse movement.
     $(this).mousemove(function (e) {
         idleTime = 0;
-        $('.footer').show(1000).dequeue();
+        $('.footer').show(1000);
         $('.top-bar').slideDown(500);
+        $('.footer ul').fadeIn();
     });
     $(this).keypress(function (e) {
         idleTime = 0;
@@ -24,6 +25,7 @@ $(document).ready(function () {
 function timerIncrement() {
     idleTime = idleTime + 1;
     if (idleTime > 2) { // 8 seconds
+        $('.footer ul').fadeOut('fast');
         $('.footer').hide(1000);
         $('.top-bar').slideUp(500);
     }
@@ -190,7 +192,7 @@ function setBG(div, direction, jumpID) {
     }
 
     if (direction == "right") {
-        if (i >= images.length-1) 
+        if (i >= images.length-1)
             i = -1;
         imgSrc = images[++i];
     }
@@ -203,7 +205,7 @@ function setBG(div, direction, jumpID) {
         imgSrc = images[jumpID];
         i = jumpID;
     }
-        
+
         var url = 'url(' + imgSrc + ')';
         var myBackgroundImage = new Image();
         $('.nextImage').css("display", "normal");
@@ -217,7 +219,7 @@ function setBG(div, direction, jumpID) {
                 div.fadeIn(500);
             });
         };
-        
+
 }
 
 $('.slide-left').click(function () {
@@ -256,7 +258,7 @@ $('.slide-right').click(function () {
          $('.contact').hide(300);
          $('.contact .cross').hide();
      }
-     
+
  });
 
  $('.contact ul li a').hover(function () {
