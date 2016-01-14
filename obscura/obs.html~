@@ -203,7 +203,7 @@
 	    <div class="footer">
 			<div class="subscribe-container valign-wrapper">
 				<div class="row valign">
-					<p class="inline footer-text">For further details ping us on <span class="white-text">info@obscuraconflu.com </span> or &nbsp; </p><a href="https://www.facebook.com/obscuranitkkr"><img class="small-image" src="fb-icon.png"></img></a>
+					<p class="inline footer-text">For further details ping us on <span class="white-text">info@obscuraconflu.com </span> or &nbsp; </p><a  target="_blank" href="https://www.facebook.com/obscuranitkkr"><img class="small-image" src="fb-icon.png"></img></a>
 				<br />
 				<p class="" style="text-align: center"><a href="http://conflu.org">conflu.org</a></p>	
 				</div>
