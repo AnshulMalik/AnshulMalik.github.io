@@ -1,0 +1,258 @@
+<html>
+    <head>
+	<title>Obscura 3.0</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Kranky' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Caesar+Dressing' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Jura' rel='stylesheet' type='text/css'>
+		<link href='particles.css' rel='stylesheet' type='text/css'>
+	<meta property="og:title" content="Obscura 3.0" /> 
+	<meta property="og:description" content="Online crypthunt is back again" /> 
+	<meta property="og:image" content="http://images.cdn.stuff.tv/sites/stuff.tv/files/brands/Games/The_Witcher_3/the_witcher_3_wild_hunt_geralt_exploring_an_underground_crypt.png" />
+	<style>
+
+	    body {
+			background: url('http://images.cdn.stuff.tv/sites/stuff.tv/files/brands/Games/The_Witcher_3/the_witcher_3_wild_hunt_geralt_exploring_an_underground_crypt.png') no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+	  		-o-background-size: cover;
+	  		background-size: cover;
+			margin: 0;
+			overflow: hidden;
+	    }
+	    .page-container {
+			opacity: .65;
+			height: 100%;
+			min-height: 100%;
+		   	display: block;
+			margin: auto;
+			min-width: 320px;
+			background: #1F2036 none repeat scroll 0% 0%; 
+	    }	
+	    .head-text {
+			color: #ffffff;
+			line-height: 50px;
+			font-size: 60px;
+
+	    }
+		.glow {
+			text-shadow: 0 0 15px white;
+		}
+	    .text-container {
+	   	    display: block;
+			left: 50%;
+			top: 32%;
+			position: absolute;	
+	    }
+		.shake {
+		  display: inline-block;
+		  transform-origin: center center;
+		
+		  animation-name: shake-little;
+		  animation-duration: 100ms;
+		  animation-iteration-count: infinite;
+		  animation-timing-function: ease-in-out;
+		  animation-delay: 0s;
+		  animation-play-state: paused;
+		}
+		.shake:hover {
+	
+		}
+	    .tagline {
+	        color: #ffffff;
+			font-size: 25px;		
+			opacity: 0;
+			margin-top: 26px;
+			font-family: 'Caesar Dressing', cursive;
+	    }
+	    .footer {
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			height:70px;
+			background-color: black;
+	    }
+	    .logo {
+			position: fixed;
+			top:60px;
+	    	width: 60px;
+			height: 60px;
+			background-color: rgba(1,1,1,0.9);
+			left: calc(100%/17);
+			color: white;
+			border-radius: 100%;
+            overflow:hidden;
+	    }
+	    .logo img{
+			width: inherit;
+			cursor: pointer;
+	    }
+	    p{
+			padding: 0px;
+			line-height: 0px;
+			font-family: 'Jura', cursive;
+	    }		
+		span {
+			font-family: 'Jura', cursive;
+		}
+		.small-image {
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			margin-top: 11px;
+			cursor: pointer;
+		}
+	.inline {
+		margin-top: 25px;
+		display: inline-block;
+	}
+
+	.quote {
+		width: 35%;
+		min-width: 300px;
+		position: absolute;
+		left: calc(100%/17);
+		top: 42%;
+	}
+
+	blockquote {
+		border-radius: 0 5px 10px 0;
+		line-height: 2em;
+		color: #fff;
+		background: rgba(128, 85, 85, 0.25) none repeat scroll 0% 0%;
+		border-left: 10px solid #ccc;
+		margin: 1.5em 10px;
+		padding: 0.5em 10px;
+		quotes: "\201C""\201D""\2018""\2019";
+	}
+	blockquote:before {
+	    color: #ccc;
+	    content: open-quote;
+	    font-size: 4em;
+	    line-height: 0.1em;
+	    margin-right: 0.25em;
+	    vertical-align: -0.4em;
+	}
+	blockquote:after {
+	    color: #ccc;
+	    content: close-quote;
+	    font-size: 4em;
+	    line-height: 0.1em;
+	    margin-right: 0.25em;
+	    vertical-align: -0.4em;
+	}
+	blockquote p {
+	    display: inline;
+	}
+
+	@media screen and (max-width: 768px) {
+		.head-text {
+			line-height: 30px;
+			font-size: 42px;		
+		}
+		.text-container {
+			opacity: 1;
+			left: calc(27%);
+		}
+		.quote {
+			left: calc(27%);
+
+		}
+	}
+	.white-text {
+		color: #fff!important;
+	}
+	.footer-text {
+		color: rgba(255, 255, 255, 0.6);
+	}
+	.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url('Preloader.gif') center no-repeat #fff;
+}
+
+	</style>
+    </head>
+
+    <body>
+	<div class="se-pre-con"></div>
+	<div class="page-container">
+
+	    <div class="logo">
+			<img src="logo.jpg" />
+		</div>
+
+	    <div class="text-container">
+			
+			<span class="head-text" id="obsHead"></span><br/>
+			<span class="tagline shake">Coming Soon...</span>
+			
+	    </div>
+
+
+
+		
+		<div class="quote">
+			<blockquote>Start where you are. Use what you have. Do what you can.</blockquote>
+		</div>
+
+	    <div class="footer">
+			<div class="subscribe-container valign-wrapper">
+				<div class="row valign">
+					<p class="inline footer-text">For further details ping us on <span class="white-text">info@obscuraconflu.com </span> or &nbsp; </p><img class="small-image" src="fb-icon.png"></img>
+				<br />
+				<p class="" style="text-align: center"><a href="http://conflu.org">conflu.org</a></p>	
+				</div>
+				
+
+			</div>
+ 	    </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="ScrambleTextPlugin.js"></script>
+	
+	<script src="http://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/jquery.ui.touch-punch.js" type="text/javascript"></script>
+
+	<script>
+
+	$(window).load(function () {
+    // Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");
+	
+	var tl = new TimelineMax();
+
+	tl.to("#obsHead", 5, {scrambleText:{text:"Obscura 3.0", chars:"lowerCase", chars: "lowercase", newClass:"glow", revealDelay:0.2, tweenLength:true, ease:Linear.easeNone}})
+	.to(".tagline", 0.5, {"opacity": 1, "margin-top": 0})
+	.to(".shake", 0.2, {"animation-play-state": "running"});
+	
+	});
+
+</script>
+
+	
+    </body>
+
+</html>
